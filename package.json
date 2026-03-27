@@ -1,0 +1,32 @@
+{
+  "name": "solana-multi-agent-trading-loop",
+  "version": "1.0.0",
+  "description": "Autonomous multi-agent Solana trading loop using Grok, Gemini, DeepSeek & Claude with Jupiter swaps",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.91.0",
+    "@jup-ag/core": "^6.0.0",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "@google/generative-ai": "^0.3.1",
+    "openai": "^4.28.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3",
+    "ts-node": "^10.9.2",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "eslint": "^8.57.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
